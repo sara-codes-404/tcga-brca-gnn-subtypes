@@ -132,10 +132,11 @@ Run everything from the project root folder, the paths are relative. Scripts 6, 
 ## Folder
 
 - `scripts/` numbered scripts, each one runs on its own
-- `results/` tables and plots
+- `results/` final tables and plots (cross-validation, controls, label-fraction curve, stable genes)
 - `results/stable_genes_ttest.csv` stable marker genes per subtype
+- `results_all_genes/` outputs of my first run, before gene selection: the model used all 11,364 genes that passed the variance filter (test accuracy 0.844). I kept them to compare with the final pipeline, and because their top genes were the junk genes I describe above
 - `requirements.txt`
-
+  
 ## Tools
 
 Python, pandas, numpy, scikit-learn, matplotlib, PyTorch, PyTorch Geometric.
